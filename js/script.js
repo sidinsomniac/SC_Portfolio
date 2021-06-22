@@ -1,12 +1,17 @@
+import projectData from "../assets/data/project-data.js";
+import addStars from "./helperFunc/twinkle.js";
+import { addEffect } from "./helperFunc/hamburger.js";
+import { appendProjects } from "./helperFunc/projects.js";
+
 const links = document.querySelectorAll('#navbar_links a');
+const heroBg = document.querySelector('.hero-bg');
+const hamburger = document.querySelector('#hamburger');
+const projectWorkLayer = document.querySelector('#project_work');
 
-document.querySelector('#hamburger').addEventListener('click', function (e) {
-    this.classList.toggle('hamburger_effect');
-    document.querySelector('#hamburger span').classList.toggle('eye_effect');
-    document.querySelector('#brand').classList.toggle('navbar_effect');
-    document.querySelector('nav').classList.toggle('navbar_effect');
+init();
 
-    links.forEach( function(link) {
-        link.classList.toggle('navbar_effect');
-    });
-});
+function init() {
+    addStars(heroBg);
+    addEffect(hamburger, links);
+    appendProjects(projectWorkLayer, projectData);
+}
