@@ -16,6 +16,17 @@
   background: var(--accent);
 }
 
+.container {
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+article .container {
+  min-width: 500px;
+  width: 50%;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -208,14 +219,11 @@ article {
 }
 
 article h2 {
-  padding-left: 9vw;
   letter-spacing: 0.3rem;
 }
 
 article p {
   padding-top: 20px;
-  width: 80vw;
-  margin: 0 auto;
   font-size: 1.2rem;
   text-align: justify;
 }
