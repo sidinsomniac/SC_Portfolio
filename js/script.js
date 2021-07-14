@@ -11,6 +11,7 @@ const projectWorkLayer = document.querySelector('#project_work');
 init();
 
 function init() {
+    AOS.init();
     addStars(heroBg);
     addEffect(hamburger, links);
     appendProjects(projectWorkLayer, projectData);

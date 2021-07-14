@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap"); */
 
 :root {
   --accent: rgb(26, 172, 224);
   --deepblue: rgb(2, 24, 76);
-  --lightblue: #a9ecf7;
-  --lightgreen: #a0f898;
-}
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
+  --lightblue: #7efffb;
+  --lightgreen: #a2ff74;
 }
 
 #bgContainer {
@@ -67,7 +62,8 @@ nav {
 }
 
 #navbar_links *:hover {
-  color: #da4167;
+  color: var(--lightgreen);
+  font-weight: bold;
 }
 
 .hamburger_effect {
@@ -92,7 +88,7 @@ nav {
   z-index: -1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #eye {
@@ -110,8 +106,7 @@ header {
 }
 
 #header_title {
-  background: linear-gradient(to left, var(--lightblue), var(--lightgreen));
-  text-align: center;
+  background: linear-gradient(to right, var(--lightblue), var(--lightgreen));
   border-radius: 0 0 100% 0;
   padding-bottom: 100px;
   border-bottom: 20px solid white;
@@ -121,7 +116,7 @@ header::before {
   content: "";
   width: 100%;
   height: 100px;
-  background: linear-gradient(to left, var(--lightblue), var(--lightgreen));
+  background: linear-gradient(to right, var(--lightblue), var(--lightgreen));
   position: absolute;
   top: 480px;
   border-radius: 100% 0 0 0;
@@ -130,7 +125,6 @@ header::before {
 }
 
 #header_title_heading {
-  letter-spacing: 0.2rem;
   font-size: 3rem;
   font-weight: normal;
   padding-bottom: 50px;
@@ -142,39 +136,18 @@ header::before {
 }
 
 #header_title h3 {
-  color: #da4167;
+  color: var(--accent);
 }
 
-/* STAR ANIMATION */
-.star {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 5px;
+.hi-text {
+  width: 100%;
 }
 
-@keyframes twinkle {
-  0% {
-    transform: scale(1, 1);
-    background: rgba(255, 255, 255, 0);
-    animation-timing-function: ease-in;
-  }
-  60% {
-    transform: scale(0.8, 0.8);
-    background: rgba(255, 255, 255, 1);
-    animation-timing-function: ease-out;
-  }
-  80% {
-    background: rgba(255, 255, 255, 0);
-    transform: scale(1, 1);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0);
-    transform: scale(1, 1);
-  }
+.stacks {
+  font-family: "Architects Daughter", cursive !important;
+  opacity: 0.7 !important;
+  text-align: justify;
 }
-/* STAR ANIMATION */
 
 @media screen and (min-width: 501px) and (max-width: 650px) {
   header {
@@ -218,10 +191,6 @@ article {
   color: #fff3eb;
 }
 
-article h2 {
-  letter-spacing: 0.3rem;
-}
-
 article p {
   padding-top: 20px;
   font-size: 1.2rem;
@@ -233,12 +202,11 @@ section {
   color: #fff3eb;
   -webkit-clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
-  padding: 50px 0;
+  padding: 50px 0 100px;
 }
 
-section h2 {
+section h1 {
   padding: 0 0 10px 9vw;
-  letter-spacing: 0.3rem;
   color: #fff3eb;
 }
 
@@ -255,7 +223,10 @@ section h2 {
 }
 
 #skills h3 {
-  margin-bottom: 10px;
+  margin: 20px auto 10px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
 }
 
 #skills_1,
@@ -356,7 +327,7 @@ section h2 {
     flex-wrap: wrap;
   }
   #skills h3 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #skills h4 {
     font-size: 1.2rem;
@@ -426,7 +397,7 @@ section h2 {
     flex-wrap: wrap;
   }
   #skills h3 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #skills h4 {
     font-size: 1.2rem;
@@ -463,11 +434,10 @@ section h2 {
 
 main {
   padding: 50px 0;
-  background: var(--accent);
+  background: white;
 }
 
 main h2 {
-  letter-spacing: 0.3rem;
   padding-left: 9vw;
   color: #552029;
 }
@@ -483,9 +453,8 @@ main h2 {
 
 #project_work .project_layer {
   box-sizing: border-box;
-  border: 5px solid #fff3eb;
-  border-radius: 10px;
-  margin: 10px 1.667%;
+  box-shadow: 1px 1px 8px 2px #00000036;
+  margin: 1.667%;
   position: relative;
   width: 30%;
   overflow: hidden;
@@ -499,9 +468,9 @@ main h2 {
   border-top: 2px solid #fff3eb;
   padding: 0 15px;
   position: absolute;
-  background: #552029;
+  background: var(--deepblue);
   color: #fff3eb;
-  top: calc(0.8 * 30vw - 50px);
+  top: calc(0.8 * 30vw - 60px);
   transition: all 0.3s ease-out;
   text-decoration: none;
   height: 100%;
@@ -509,24 +478,29 @@ main h2 {
 
 #project_work .project_layer_overlay h3 {
   padding-top: 10px;
+  font-size: 14px;
 }
 
 #project_work .project_layer_overlay p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-top: 20%;
 }
 
 #project_work .project_layer:hover .project_layer_overlay {
   top: 0;
-  color: #da4167;
-  background: rgba(255, 243, 235, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to right, var(--lightblue), var(--lightgreen));
+}
+
+#project_work .project_layer:hover .project_layer_overlay h3 {
+  font-size: 20px;
 }
 
 main::after {
   content: "";
   position: absolute;
-  background: var(--accent);
-  border-bottom: 20px solid #fff3eb;
+  background: white;
+  border-bottom: 20px solid var(--accent);
   width: 100%;
   height: 150px;
   border-radius: 0 0 0 100%;
@@ -592,7 +566,8 @@ main::after {
   #navbar_links * {
     text-align: center;
     position: relative;
-    background: linear-gradient(60deg, #552029, #da4167);
+    background: var(--accent);
+    /* background: linear-gradient(60deg, #552029, #da4167); */
     box-sizing: border-box;
     box-shadow: 0 5px 5px rgba(29, 11, 14, 0.2);
     width: 100%;
@@ -604,7 +579,7 @@ main::after {
   #navbar_links *:hover {
     color: white;
     font-weight: bold;
-    background: linear-gradient(60deg, #da4167, #eb96ab);
+    background: var(--accent);
   }
   #navbar_links_skills {
     transition: 0.5s left ease 0.2s;
@@ -629,7 +604,7 @@ main::after {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #552029;
+    background: var(--deepblue);
     transition: -webkit-transform 0.7s ease;
     transition: transform 0.7s ease;
     transition: transform 0.7s ease, -webkit-transform 0.7s ease;
@@ -651,7 +626,7 @@ main::after {
     left: 15px;
     width: 25px;
     height: 25px;
-    background: #552029;
+    background: var(--deepblue);
     border-radius: 50%;
   }
   #hamburger span::after {
@@ -665,7 +640,6 @@ main::after {
     border-radius: 50%;
   }
   #project_work .project_layer {
-    border-radius: 50%;
     width: 100%;
     text-align: center;
   }
@@ -680,6 +654,16 @@ main::after {
   }
   #project_work .project_layer_overlay p {
     font-size: 1.2rem;
+  }
+  article .container {
+    min-width: 250px;
+    width: 50%;
+  }
+  article .container p {
+    font-size: 12px;
+  }
+  .intro {
+    font-size: 16px;
   }
 }
 
@@ -720,11 +704,10 @@ footer {
   margin: 0 auto;
   padding: 250px 0 20px 0;
   text-align: center;
-  background: #1d0b0e;
+  background: var(--deepblue);
 }
 
 footer h3 {
-  letter-spacing: 0.4rem;
   font-weight: normal;
   color: #fff3eb;
 }
@@ -740,7 +723,7 @@ footer h3 {
 }
 
 #social a {
-  width: 33%;
+  width: 20%;
 }
 
 #social a img {
@@ -758,7 +741,7 @@ footer h3 {
     padding-bottom: 60px;
   }
   #skills h3 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #skills h4 {
     font-size: 1.2rem;

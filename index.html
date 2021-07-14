@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Siddhartha Chatterjee | MEAN Stack Developer | Graphic Designer</title>
+    <link rel="stylesheet" href="./css/simple-grid.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/twinkle.css">
     <link rel="stylesheet" href="./css/cube.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./assets/images/icons/favicon.ico">
 </head>
 
@@ -24,7 +27,8 @@
 
     <nav>
         <div id="navbar">
-            <!-- <a href="index.html" id="brand"><img src="./assets/images/personal/Logo.png" alt="Logo"></a> -->
+            <a href="#" id="brand"><img src="./assets/images/personal/Logo.png" alt="Logo"></a>
+
             <div id="navbar_links">
                 <a id="navbar_links_skills" href="#skills">Skills</a>
                 <a id="navbar_links_work" href="#work">Work</a>
@@ -37,27 +41,45 @@
     <div id="bgContainer">
         <header>
             <div id="header_title">
-                <img src="./assets//images/personal/hello.png" alt="">
-                <div class="cube-container">
-                    <div id="cube">
-                        <div class="front"></div>
-                        <div class="back"></div>
-                        <div class="right"></div>
-                        <div class="left"></div>
-                        <div class="top"></div>
-                        <div class="bottom"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="hi-text" src="./assets//images/personal/hi.png" data-aos="fade-down" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h2 class="intro" data-aos="fade-up" data-aos-duration="1500">
+                                My name is Siddhartha.
+                                <br />
+                                I'm a <span class="stacks">
+                                    MEAN/MERN/MERNG
+                                </span> Stack developer.<br /> Please click the rotating box to check out my projects!
+                            </h2>
+                        </div>
+                        <div class="col-4">
+                            <a href="#work" class="cube-container" data-aos="fade-up" data-aos-duration="1500">
+                                <div id="cube">
+                                    <div class="front"></div>
+                                    <div class="back"></div>
+                                    <div class="right"></div>
+                                    <div class="left"></div>
+                                    <div class="top"></div>
+                                    <div class="bottom"></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
         <article>
-            <div class="container">
-                <h2>
-                    Nice seeing you!
-                </h2>
+            <div data-aos="fade-up" class="container">
+                <h1>
+                    About Me
+                </h1>
                 <p>
-                    I'm a MEAN Stack Developer and a Graphic Designer, focused on building high quality responsive web
+                    I'm a MEAN/MERN/MERNG Stack Developer and a Graphic Designer, focused on building high quality
+                    responsive web
                     interfaces, mobile and web applications. I love designing, drawing, thinking, and at the same time,
                     building simple, clean and efficient web interfaces with cutting edge designs. I build rich and
                     functional web applications mainly based on mobile-first frameworks and the latest web technologies.
@@ -66,34 +88,30 @@
         </article>
 
         <section>
-            <h2>
+            <h1>
                 Skills
-            </h2>
+            </h1>
             <div id="skills">
-                <div id="skills_1">
+                <div id="skills_1" data-aos="fade-up">
+                    <h2>
+                        Developer
+                    </h2>
                     <h3>
-                        Front-end Developer
-                    </h3>
-                    <p>
-                        I think of the browser as my playground, and I simply enjoy bringing my ideas to life
-                        in there.
-                    </p>
-                    <h4>
                         Technologies Known
-                    </h4>
+                    </h3>
                     <div id="skills_1_technologies">
                         <ul>
                             <li>
-                                <img src="./assets/images/icons/Technologies/express.png" alt="" class="icon">
-                                <span>ExpressJS</span>
+                                <img src="./assets/images/icons/Technologies/react.png" alt="" class="icon">
+                                <span>React</span>
                             </li>
                             <li>
                                 <img src="./assets/images/icons/Technologies/node.png" alt="" class="icon">
                                 <span>NodeJS</span>
                             </li>
                             <li>
-                                <img src="./assets/images/icons/Technologies/html5.png" alt="" class="icon">
-                                <span>Html5</span>
+                                <img src="./assets/images/icons/Technologies/express.png" alt="" class="icon">
+                                <span>ExpressJS</span>
                             </li>
                             <li>
                                 <img src="./assets/images/icons/Technologies/es6.png" alt="" class="icon">
@@ -102,26 +120,26 @@
                         </ul>
                         <ul>
                             <li>
-                                <img src="./assets/images/icons/Technologies/mongo.png" alt="" class="icon">
-                                <span>MongoDB</span>
-                            </li>
-                            <li>
                                 <img src="./assets/images/icons/Technologies/angular.png" alt="" class="icon">
                                 <span>Angular</span>
                             </li>
                             <li>
-                                <img src="./assets/images/icons/Technologies/react.png" alt="" class="icon">
-                                <span>React</span>
+                                <img src="./assets/images/icons/Technologies/redux.png" alt="" class="icon">
+                                <span>Redux</span>
                             </li>
                             <li>
-                                <img src="./assets/images/icons/Technologies/css3.png" alt="" class="icon">
-                                <span>CSS3</span>
+                                <img src="./assets/images/icons/Technologies/graphql.png" alt="" class="icon">
+                                <span>GraphQL</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/Technologies/mongo.png" alt="" class="icon">
+                                <span>MongoDB</span>
                             </li>
                         </ul>
                     </div>
-                    <h4>
+                    <h3>
                         Tools
-                    </h4>
+                    </h3>
                     <div id="skills_1_tools">
                         <ul>
                             <li>
@@ -161,17 +179,13 @@
                         </ul>
                     </div>
                 </div>
-                <div id="skills_2">
-                    <h3>
+                <div id="skills_2" data-aos="fade-down">
+                    <h2>
                         Designer
-                    </h3>
-                    <p>
-                        I love modern cutting edge designs, so I design the same. I prefer simplicity, and
-                        cleanliness.
-                    </p>
-                    <h4>
+                    </h2>
+                    <h3>
                         What I Design With
-                    </h4>
+                    </h3>
                     <div id="skills_2_tools">
                         <ul>
                             <li>
@@ -187,14 +201,14 @@
                                 <span>Adobe XD</span>
                             </li>
                             <li>
-                                <img src="./assets/images/icons/Design_tools/idea.png" alt="">
-                                <span>Pen and Paper</span>
+                                <img src="./assets/images/icons/Design_tools/figma.png" alt="">
+                                <span>Figma</span>
                             </li>
                         </ul>
                     </div>
-                    <h4>
+                    <h3>
                         What I Design
-                    </h4>
+                    </h3>
                     <div id="skills_2_skills">
                         <ul>
                             <li>
@@ -223,14 +237,16 @@
 
     <main id="work">
         <h2>
-            My Project Works
+            Some of my works
         </h2>
-        <div id="project_work"></div>
+        <div id="project_work" data-aos="fade-down"></div>
     </main>
 
     <footer id="connect">
         <h3>
-            In case my works intrigued you
+            <a href="index.html" id="brand"><img src="./assets/images/personal/logo-white.png" style="width: 80px;"
+                    alt="Logo"></a>
+            In case my works piqued your interest
         </h3>
         <div id="social">
             <a href="https://www.facebook.com/sidinsomniac" target="_blank">
@@ -242,9 +258,13 @@
             <a href="https://github.com/sidinsomniac" target="_blank">
                 <img src="./assets/images/social/github.png" alt="Github">
             </a>
+            <a href="https://fiverr.com/velocigraphtor" target="_blank">
+                <img src="./assets/images/social/fiverr.png" alt="Fiverr">
+            </a>
         </div>
     </footer>
     <!-- Copyright Siddhartha Chatterjee @2018 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="./js/script.js"></script>
 </body>
 

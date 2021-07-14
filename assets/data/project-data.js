@@ -1,21 +1,39 @@
 export default [
     {
-        title: "Yelp Camp",
-        description: "A simple MEAN stack app to share favourite campgrounds",
-        imgUrl: "./assets/images/projects/yelpcamp.jpg",
-        url: "https://fast-tor-50255.herokuapp.com/"
+        title: "OpenCamp",
+        description: "A purely fullstack medium scale app based on MEN technologies, with integrated maps and review systems",
+        imgUrl: "./assets/images/projects/opencamp.jpg",
+        url: "https://hidden-harbor-90648.herokuapp.com/"
+    },
+    {
+        title: "Neighborhood Map",
+        description: "A React neighborhood search and filter application with integrated maps",
+        imgUrl: "./assets/images/projects/neighborhood.jpg",
+        url: "https://sidinsomniac.github.io/Neigbourhood_Map/"
+    },
+    {
+        title: "Coolkart",
+        description: "A cool ecommerce app built on technologies such as Angular and Firebase",
+        imgUrl: "./assets/images/projects/coolkart.jpg",
+        url: "https://coolkart-3f311.firebaseapp.com/"
     },
     {
         title: "Restaurant Review App",
-        description: "A mobile-ready responsive, progressive and accessible web application to search various",
+        description: "A mobile-ready responsive, progressive and accessible web application to search various restaurants based on their locality and cuisines, and view their respective reviews",
         imgUrl: "./assets/images/projects/restaurant.jpg",
         url: "https://sidinsomniac.github.io/restaurant-review-app/"
     },
     {
-        title: "Neighborhood Map",
-        description: "An SPA made using React, displaying a map populated with many markers depicting neighbourhood",
-        imgUrl: "./assets/images/projects/neighborhood.jpg",
-        url: "https://sidinsomniac.github.io/Neigbourhood_Map/"
+        title: "Social Media",
+        description: "An anonymous social media application using GraphQL and purely based on the MERNG Stack",
+        imgUrl: "./assets/images/projects/social-media.jpg",
+        url: "https://priceless-thompson-3fd462.netlify.app/"
+    },
+    {
+        title: "PixArt",
+        description: "A simple pixel art maker heavily based on events, and flaunts the 90's era theme",
+        imgUrl: "./assets/images/projects/pixel.jpg",
+        url: "https://sidinsomniac.github.io/Pixel-Art-Maker/"
     },
     {
         title: "Matching Game",
@@ -30,18 +48,6 @@ export default [
         url: "https://sidinsomniac.github.io/Classic-Arcade-Frogger/"
     },
     {
-        title: "PixArt",
-        description: "A simple pixel art maker heavily based on events, and flaunts the 90's era theme, that tests",
-        imgUrl: "./assets/images/projects/pixel.jpg",
-        url: "https://sidinsomniac.github.io/Pixel-Art-Maker/"
-    },
-    {
-        title: "Reaction Tester",
-        description: "Another game which is meant to test your reflexes and reaction timing",
-        imgUrl: "./assets/images/projects/reaction.jpg",
-        url: "https://sidinsomniac.github.io/ReactionTester-Plus/"
-    },
-    {
         title: "Typing Test",
         description: "A simple application which targets your typing and accuracy skills in real time",
         imgUrl: "./assets/images/projects/typing.jpg",
@@ -54,16 +60,10 @@ export default [
         url: "https://sidinsomniac.github.io/Code-PlayGround/"
     },
     {
-        title: "Log Keeper",
-        description: "A simple log keeper where you can add or remove items for any simple tasks (hint: grocery)",
-        imgUrl: "./assets/images/projects/logkeep.jpg",
-        url: "https://sidinsomniac.github.io/Log-Keeper/"
-    },
-    {
-        title: "Fingerdrum",
-        description: "If you are a musician, you will love this simple percussion instrument that tests your rhythm",
-        imgUrl: "./assets/images/projects/finger.jpg",
-        url: "https://sidinsomniac.github.io/Finger-Drum/"
+        title: "Reaction Tester",
+        description: "Another game which is meant to test your reflexes and reaction timing",
+        imgUrl: "./assets/images/projects/reaction.jpg",
+        url: "https://sidinsomniac.github.io/ReactionTester-Plus/"
     },
     {
         title: "Color Guessing",
@@ -72,14 +72,26 @@ export default [
         url: "https://codepen.io/sidInsomniac/full/ypRZME/"
     },
     {
+        title: "Fingerdrum",
+        description: "If you are a musician, you will love this simple percussion instrument that tests your rhythm",
+        imgUrl: "./assets/images/projects/finger.jpg",
+        url: "https://sidinsomniac.github.io/Finger-Drum/"
+    },
+    {
+        title: "Log Keeper",
+        description: "A simple log keeper where you can add or remove items for any simple tasks (hint: grocery)",
+        imgUrl: "./assets/images/projects/logkeep.jpg",
+        url: "https://sidinsomniac.github.io/Log-Keeper/"
+    },
+    {
         title: "Digital Clock",
-        description: "A digital clock made using pure CSS and JS",
+        description: "A digital clock, made purely using CSS and vanilla Javascript",
         imgUrl: "./assets/images/projects/digital.jpg",
         url: "https://sidinsomniac.github.io/digi_clock/"
     },
     {
         title: "Analog Clock",
-        description: "A beautiful SVG, CSS and JS based Grandfather Clock",
+        description: "A beautiful SVG, CSS and JS based functional Grandfather Clock",
         imgUrl: "./assets/images/projects/analog.jpg",
         url: "https://sidinsomniac.github.io/analog_clock/"
     },
