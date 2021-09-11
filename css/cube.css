@@ -33,26 +33,26 @@
 }
 
 .front {
-  background: url("/assets/images/icons/Technologies/angular.png");
+  background: url("../assets/images/icons/Technologies/angular.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .back {
-  background: url("/assets/images/icons/Technologies/react.png");
+  background: url("../assets/images/icons/Technologies/react.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .right {
-  background: url("/assets/images/icons/Technologies/graphql.png");
+  background: url("../assets/images/icons/Technologies/graphql.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #eaf9ff !important;
 }
 
 .left {
-  background: url("/assets/images/icons/Technologies/express.png");
+  background: url("../assets/images/icons/Technologies/express.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #eaf9ff !important;
@@ -60,14 +60,14 @@
 }
 
 .top {
-  background: url("/assets/images/icons/Technologies/node.png");
+  background: url("../assets/images/icons/Technologies/node.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #eaf9ff !important;
 }
 
 .bottom {
-  background: url("/assets/images/icons/Technologies/redux.png");
+  background: url("../assets/images/icons/Technologies/redux.png");
   background-position: center;
   background-repeat: no-repeat;
 }
