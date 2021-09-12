@@ -1,7 +1,7 @@
 export default [
     {
         title: "OpenCamp",
-        description: "A purely fullstack medium scale app based on MEN technologies, with integrated maps and review systems",
+        description: "A pure fullstack medium scale app based on MEN technologies, with integrated maps and review systems",
         imgUrl: "./assets/images/projects/opencamp.jpg",
         url: "https://hidden-harbor-90648.herokuapp.com/"
     },
@@ -31,7 +31,7 @@ export default [
     },
     {
         title: "PixArt",
-        description: "A simple pixel art maker heavily based on events, and flaunts the 90's era theme",
+        description: "A simple pixel art maker made not with an HTML canvas element, but with tables",
         imgUrl: "./assets/images/projects/pixel.jpg",
         url: "https://sidinsomniac.github.io/Pixel-Art-Maker/"
     },
